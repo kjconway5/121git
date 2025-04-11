@@ -1,0 +1,139 @@
+Command: /Users/kye/.espressif/python_env/idf5.5_py3.13_env/bin/python /Users/kye/School/CSE121/esp/esp-idf/tools/idf_monitor.py -p /dev/cu.usbmodem101 -b 115200 --toolchain-prefix riscv32-esp-elf- --target esp32c3 --revision 3 --decode-panic backtrace /Users/kye/School/CSE121/121git/lab1/lab1_3/build/blink.elf /Users/kye/School/CSE121/121git/lab1/lab1_3/build/bootloader/bootloader.elf -m '/Users/kye/.espressif/python_env/idf5.5_py3.13_env/bin/python' '/Users/kye/School/CSE121/esp/esp-idf/tools/idf.py'
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xc (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038220c
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x15b0
+load:0x403cbf10,len:0xc34
+load:0x403ce710,len:0x2fe8
+entry 0x403cbf1a
+[0;32mI (24) boot: ESP-IDF v5.5-dev-2844-g5c51472e82-dirty 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr  7 2025 12:28:32[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (30) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (34) boot.esp32c3: SPI Mode       : DIO[0m
+[0;32mI (38) boot.esp32c3: SPI Flash Size : 2MB[0m
+[0;32mI (42) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (49) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (55) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (61) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (68) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (74) boot: End of partition table[0m
+[0;32mI (78) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=06768h ( 26472) map[0m
+[0;32mI (89) esp_image: segment 1: paddr=00016790 vaddr=3fc8b400 size=01148h (  4424) load[0m
+[0;32mI (93) esp_image: segment 2: paddr=000178e0 vaddr=40380000 size=08738h ( 34616) load[0m
+[0;32mI (106) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=12428h ( 74792) map[0m
+[0;32mI (119) esp_image: segment 4: paddr=00032450 vaddr=40388738 size=02b64h ( 11108) load[0m
+[0;32mI (122) esp_image: segment 5: paddr=00034fbc vaddr=50000000 size=0001ch (    28) load[0m
+[0;32mI (127) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (128) boot: Disabling RNG early entropy source...[0m
+[0;32mI (144) cpu_start: Unicore app[0m
+[0;32mI (153) cpu_start: Pro cpu start user code[0m
+[0;32mI (153) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (153) app_init: Application information:[0m
+[0;32mI (153) app_init: Project name:     blink[0m
+[0;32mI (157) app_init: App version:      68186fa-dirty[0m
+[0;32mI (161) app_init: Compile time:     Apr  7 2025 12:28:28[0m
+[0;32mI (166) app_init: ELF file SHA256:  d4064d188...[0m
+[0;32mI (170) app_init: ESP-IDF:          v5.5-dev-2844-g5c51472e82-dirty[0m
+[0;32mI (176) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (180) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (184) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (188) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (194) heap_init: At 3FC8D380 len 00032C80 (203 KiB): RAM[0m
+[0;32mI (200) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (206) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (212) heap_init: At 5000001C len 00001FCC (7 KiB): RTCRAM[0m
+[0;32mI (217) spi_flash: detected chip: generic[0m
+[0;32mI (221) spi_flash: flash io: dio[0m
+[0;33mW (224) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (236) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (242) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (249) main_task: Started on CPU0[0m
+[0;32mI (249) main_task: Calling app_main()[0m
+[0;32mI (249) example: Example configured to blink GPIO LED![0m
+[0;32mI (259) example: Turning the LED OFF![0m
+[0;32mI (1259) example: Turning the LED ON![0m
+[0;32mI (2259) example: Turning the LED OFF![0m
+[0;32mI (3259) example: Turning the LED ON![0m
+[0;32mI (4259) example: Turning the LED OFF![0m
+[0;32mI (5259) example: Turning the LED ON![0m
+[0;32mI (6259) example: Turning the LED OFF![0m
+[0;32mI (7259) example: Turning the LED ON![0m
+[0;32mI (8259) example: Turning the LED OFF![0m
+[0;32mI (9259) example: Turning the LED ON![0m
+[0;32mI (10259) example: Turning the LED OFF![0m
+[0;32mI (11259) example: Turning the LED ON![0m
+[0;32mI (12259) example: Turning the LED OFF![0m
+[0;32mI (13259) example: Turning the LED ON![0m
+[0;32mI (14259) example: Turning the LED OFF![0m
+[0;32mI (15259) example: Turning the LED ON![0m
+[0;32mI (16259) example: Turning the LED OFF![0m
+[0;32mI (17259) example: Turning the LED ON![0m
+[0;32mI (18259) example: Turning the LED OFF![0m
+[0;32mI (19259) example: Turning the LED ON![0m
+[0;32mI (20259) example: Turning the LED OFF![0m
+[0;32mI (21259) example: Turning the LED ON![0m
+[0;32mI (22259) example: Turning the LED OFF![0m
+[0;32mI (23259) example: Turning the LED ON![0m
+[0;32mI (24259) example: Turning the LED OFF![0m
+[0;32mI (25259) example: Turning the LED ON![0m
+[0;32mI (26259) example: Turning the LED OFF![0m
+[0;32mI (27259) example: Turning the LED ON![0m
+[0;32mI (28259) example: Turning the LED OFF![0m
+[0;32mI (29259) example: Turning the LED ON![0m
+[0;32mI (30259) example: Turning the LED OFF![0m
+[0;32mI (31259) example: Turning the LED ON![0m
+[0;32mI (32259) example: Turning the LED OFF![0m
+[0;32mI (33259) example: Turning the LED ON![0m
+[0;32mI (34259) example: Turning the LED OFF![0m
+[0;32mI (35259) example: Turning the LED ON![0m
+[0;32mI (36259) example: Turning the LED OFF![0m
+[0;32mI (37259) example: Turning the LED ON![0m
+[0;32mI (38259) example: Turning the LED OFF![0m
+[0;32mI (39259) example: Turning the LED ON![0m
+[0;32mI (40259) example: Turning the LED OFF![0m
+[0;32mI (41259) example: Turning the LED ON![0m
+[0;32mI (42259) example: Turning the LED OFF![0m
+[0;32mI (43259) example: Turning the LED ON![0m
+[0;32mI (44259) example: Turning the LED OFF![0m
+[0;32mI (45259) example: Turning the LED ON![0m
+[0;32mI (46259) example: Turning the LED OFF![0m
+[0;32mI (47259) example: Turning the LED ON![0m
+[0;32mI (48259) example: Turning the LED OFF![0m
+[0;32mI (49259) example: Turning the LED ON![0m
+[0;32mI (50259) example: Turning the LED OFF![0m
+[0;32mI (51259) example: Turning the LED ON![0m
+[0;32mI (52259) example: Turning the LED OFF![0m
+[0;32mI (53259) example: Turning the LED ON![0m
+[0;32mI (54259) example: Turning the LED OFF![0m
+[0;32mI (55259) example: Turning the LED ON![0m
+[0;32mI (56259) example: Turning the LED OFF![0m
+[0;32mI (57259) example: Turning the LED ON![0m
+[0;32mI (58259) example: Turning the LED OFF![0m
+[0;32mI (59259) example: Turning the LED ON![0m
+[0;32mI (60259) example: Turning the LED OFF![0m
+[0;32mI (61259) example: Turning the LED ON![0m
+[0;32mI (62259) example: Turning the LED OFF![0m
+[0;32mI (63259) example: Turning the LED ON![0m
+[0;32mI (64259) example: Turning the LED OFF![0m
+[0;32mI (65259) example: Turning the LED ON![0m
+[0;32mI (66259) example: Turning the LED OFF![0m
+[0;32mI (67259) example: Turning the LED ON![0m
+[0;32mI (68259) example: Turning the LED OFF![0m
+[0;32mI (69259) example: Turning the LED ON![0m
+[0;32mI (70259) example: Turning the LED OFF![0m
+[0;32mI (71259) example: Turning the LED ON![0m
+[0;32mI (72259) example: Turning the LED OFF![0m
+[0;32mI (73259) example: Turning the LED ON![0m
+[0;32mI (74259) example: Turning the LED OFF![0m
+[0;32mI (75259) example: Turning the LED ON![0m
+[0;32mI (76259) example: Turning the LED OFF![0m
+[0;32mI (77259) example: Turning the LED ON![0m
+[0;32mI (78259) example: Turning the LED OFF![0m
+[0;32mI (79259) example: Turning the LED ON![0m
+[0;32mI (80259) e
